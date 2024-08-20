@@ -10,7 +10,7 @@ function encriptar() {
     
     // Verificar si el textarea está vacío
     if (textoOriginal === "") {
-        alert("El textarea está vacío. Por favor, ingresa algún texto.");
+        alert("Por favor, ingresa algún texto.");
         return; 
     }
 
@@ -67,7 +67,7 @@ function desencriptar() {
     textArea.value = textoDesencriptado; // Actualizar el textarea con el texto desencriptado
     
     if (textArea.value === "") {
-        alert("El textarea está vacío. Por favor, ingresa algún texto.");
+        alert("Por favor, ingresa algún texto.");
         return; 
     }
     cambiarImagen();
