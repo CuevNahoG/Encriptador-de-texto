@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de texto</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/iconoencriptador.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <h1><img class="logo" src="imagenes/logo.svg" alt="Logo de Alura LATAM"></h1>
+    </header>
+
+    <main>
+        <section class="texto__a__encriptar">
+                <textarea class="text__area" placeholder="Ingrese el texto:" id="texto" cols="30" rows="10"></textarea>
+            <div class="pide__texto__a__encriptar">
+                <img src="imagenes/aviso.svg" alt="Icono Aviso">
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones__all">
+                <button class="boton__encriptar" type="submit" onclick="encriptar()">Encriptar</button>
+                <button class="boton__desencriptar" type="submit" onclick="desencriptar ()">Desencriptar</button>
+                <button class="boton__borrar" type="submit" onclick="borrar()">Borrar</button>
+            </div>
+        </section>
+            <div class="rectangulo">
+                <img id="imgMuñeco" class="rectangulo__imagen" src="imagenes/muñeco .png" alt="Imagen Muñeco">
+                <p id="textoMuñeco" class="rectangulo__imagen__texto">Esperando texto...</p>
+                <img hidden id="imgLlave" class="rectangulo__imagen2" src="imagenes/imgllave.PNG" alt="Imagen Llave">
+                <p hidden id="textoLlave" class="rectangulo__imagen__texto2">Texto encriptado</p>
+            </div>
+
+    </main>
+    <footer class="footer">
+                <p>Desarrollado por Nahomi Cuevas &copy;Alura Latam</p>
+        <div class="footer__links">
+            <a class="footer__link__alone" href="https://github.com/CuevNahoG/Encriptador-de-texto">
+                <img src="imagenes/github.svg" alt="Logo Github">
+            </a>
+            <a class="footer__link__alone" href="https://www.linkedin.com/in/nahomi-cuevas-86160a264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <img src="imagenes/linkedin.svg" alt="Logo Linkedin">
+        </div>
+    </footer>
+        <script src="app.js"></script>
+</body>
+</html>

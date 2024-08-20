@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --dark-blue: #052051;
+    --blue: #0520517c;
+    --light-blue: #F3F5FC;
+    --grey: #4c5053;
+    --light-grey: #9da2a7;
+    --black: #000000;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background: var(--light-blue)
+}
+
+::selection{
+    background: var(--blue);
+}
+
+.logo{
+    height: 100%;
+    padding: 4% 0% 0% 4%;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.texto__a__encriptar{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.text__area{
+    border-color: transparent;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.pide__texto__a__encriptar{
+    display: flex;
+    align-items:center;
+}
+
+.boton__encriptar{
+    background: var(--grey);
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    color: var(--white);
+    border: 2px solid var(--grey);
+    justify-content: center;
+    gap: 2px;
+}
+
+.boton__encriptar:active{
+    box-shadow: inset 2px 2px 4px var(--black);
+    inset: -3px -4px 8px var(--black);
+    color: var(--black);
+}
+
+.boton__encriptar:hover,.boton__desencriptar:hover, .boton__borrar:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.boton__desencriptar{
+    background: var(--white);
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    color: #052051;
+    border: 2px solid var(--blue);
+    justify-content: center;
+    gap: 2px;
+}
+
+.boton__desencriptar:active{
+    box-shadow: inset 2px 2px 4px var(--light-grey);
+    inset: -3px -4px 8px var(--light-grey);
+    color: var(--light-grey);
+}
+
+.boton__borrar{
+    background: var(--light-grey);
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+    border: 2px solid var(--light-grey);
+    justify-content: center;
+    gap: 2px;
+}
+
+.boton__borrar:active{
+    box-shadow: inset 2px 2px 4px var(--blue);
+    inset: -3px -4px 8px var(--blue);
+    color: var(--blue);
+}
+
+.rectangulo{
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1rem;
+    border-radius: 10px;
+    height: 26rem;
+    width: 336px;
+}
+
+.rectangulo__imagen2{
+    width: 310px;
+}
+
+.rectangulo__imagen, .rectangulo__imagen__texto, .rectangulo__imagen2, .rectangulo__imagen__texto2{
+    background: var(--white);
+}
+
+.footer{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 0% 0% 0%;
+}
+
+.footer__links{
+    display: flex;
+    justify-content: center;
+}
+.footer__link__alone:hover{
+    padding: 2%;
+}
+
+/* Estilos para tablets/ipads */
+
+@media (max-width:1024px) {
+    
+    .rectangulo{
+        display: flex;
+        align-self: flex-start;
+        height: 28rem;
+    }
+    .botones__all{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer{
+        padding: 15%;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width:767px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2% 0% 0% 5%;
+    }
+    .text__area{
+        padding: 0% 0% 8% 0%;
+}
+    .texto__a__encriptar{
+        display: flex;
+        justify-content: center;
+        padding: 0% 0% 6% 6%;
+    }
+    .pide__texto__a__encriptar{
+        padding: 0% 0% 6% 0%;
+    }
+    .rectangulo{
+        height: 60%; 
+    }
+    .botones__all{
+        width: 90%;
+        gap: 10px;
+    }
+}
+
