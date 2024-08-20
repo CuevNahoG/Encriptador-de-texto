@@ -185,7 +185,7 @@ body{
     .texto__a__encriptar{
         display: flex;
         justify-content: center;
-        padding: 0% 0% 6% 6%;
+        padding: 0% 0% 6% 0%;
     }
     .pide__texto__a__encriptar{
         padding: 0% 0% 6% 0%;
@@ -194,7 +194,7 @@ body{
         height: 60%; 
     }
     .botones__all{
-        width: 90%;
+        width: 80%;
         gap: 10px;
     }
 }
